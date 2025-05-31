@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+// Endereço da classe
 namespace Pessoas.models
 {
     public class Pessoa
@@ -13,6 +14,6 @@ namespace Pessoas.models
         public void Apresentar()
         {
             Console.WriteLine($"Olá, meu nome é {Nome} e tenho {Idade} anos");
-        }        
+        }
     }
 }

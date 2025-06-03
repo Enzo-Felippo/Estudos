@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Pessoas.Models;
-using Calculador.Models;
+using Calculador.Common.Models;
 
 Pessoa Enzo = new()
 {
@@ -54,3 +54,21 @@ do
     Console.Write("Digite o numero 0 para parar o loop: ");
     parar = Convert.ToInt32(Console.ReadLine());
 } while (parar != 0);
+
+Console.WriteLine("=======================================");
+int[] arrayInteiros = new int[3];
+arrayInteiros[0] = 1;
+arrayInteiros[1] = 2;
+arrayInteiros[2] = 3;
+// arrayInteiros[3] = 4; Isso dá erro
+Console.WriteLine("Array com for:");
+for (int contador = 0; contador < arrayInteiros.Length; contador++)
+{
+    Console.WriteLine($"Possição N°{contador} - {arrayInteiros[contador]}");
+}
+Console.WriteLine("=======================================");
+Console.WriteLine("Array com foreach");
+foreach (int valor in arrayInteiros)
+{
+    Console.WriteLine($"Valor: {valor}");
+} 

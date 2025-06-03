@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 // Endereço da classe
-namespace Pessoas.models
+namespace Pessoas.Models
 {
     public class Pessoa
     {

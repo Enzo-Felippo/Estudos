@@ -71,4 +71,34 @@ Console.WriteLine("Array com foreach");
 foreach (int valor in arrayInteiros)
 {
     Console.WriteLine($"Valor: {valor}");
-} 
+}
+Console.WriteLine("=======================================");
+Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2);
+arrayInteiros[3] = 4;
+arrayInteiros[4] = 5;
+arrayInteiros[5] = 6;
+Console.WriteLine("Dobrando a capacidade o Array");
+foreach (int valor in arrayInteiros)
+{
+    Console.WriteLine($"Valor: {valor}");
+}
+Console.WriteLine("=======================================");
+List<string> listaString = new List<string>();
+listaString.Add("MT");
+listaString.Add("RO");
+listaString.Add("SP");
+listaString.Add("MS");
+Console.WriteLine("Lista com for:");
+for (int contador = 0; contador < listaString.Count; contador++)
+{
+    Console.WriteLine($"Possição N°{contador} - {listaString[contador]}");
+}
+Console.WriteLine("=======================================");
+Console.WriteLine("Usando listas com foreach:");
+int contadorForeach = 0;
+listaString.Remove("MS");
+foreach (string valor in listaString)
+{
+    Console.WriteLine($"Possição N°{contadorForeach} - {valor}");
+    contadorForeach++;
+}

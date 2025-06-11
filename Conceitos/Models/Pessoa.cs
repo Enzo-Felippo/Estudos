@@ -41,6 +41,7 @@ namespace Conceitos.Models
             {
                 if (value < 0 || value > 120)
                 {
+                    // Fiz uma exeção acontecer
                     throw new ArgumentException("A idade não pode ser menor que zero ou maior que 120");
                 }
                 _idade = value;

@@ -2,12 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace Conceitos.Models
 {
     public class Curso
     {
         public string Nome { get; set; }
+        public decimal Mensalidade { get; set; }
         public List<Pessoa> Alunos { get; set; }
 
         public void AdcionarAluno(Pessoa aluno)
@@ -25,10 +27,18 @@ namespace Conceitos.Models
         public void MostrarAlunos()
         {
             Console.WriteLine($"Alunos do curso: {Nome}");
-            foreach (Pessoa Aluno in Alunos)
+            for (int ordem = 0; ordem < Alunos.Count; ordem++)
             {
-                Console.WriteLine(Aluno.NomeCompleto);
+                Console.WriteLine($"{ordem + 1}º - {Alunos[ordem].NomeCompleto}");
             }
+        }
+        
+        public void ReceitaMensalDoCurso()
+        {
+            decimal receita = Mensalidade * Alunos.Count;
+            Console.WriteLine($"Valor da mensalidada: {Mensalidade:C}");
+            Console.WriteLine($"Quantidade de alunos: {Alunos.Count}");
+            Console.WriteLine($"Receita mensal: {receita.ToString("C", CultureInfo.CreateSpecificCulture("pt-BR"))}");
         }
         
     }

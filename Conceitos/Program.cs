@@ -1,6 +1,7 @@
 ﻿using Conceitos.Models;
 using System.ComponentModel.DataAnnotations;
 using System.Globalization;
+using System.Runtime.InteropServices;
 
 CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
 
@@ -122,3 +123,45 @@ if (notaAluno.ContainsKey(pessoa2))
 
 // Trabalhando com tuplas
 
+// Esse método tem como nomar os itens da tupla * Ganhador
+(int ID, string Nome, string Sobrenome, decimal) tupla = (1, "Felippo", "Lopes", 1.77M);
+// Acho que esse método seja muito ruim
+// ValueTuple<int, string, string, decimal> novaTupla1 = (1, "Rose", "Ruy", 1.62M);
+// Acho esse o metodo mais fácil de criar tupla, pena que não tem como nomear
+// var novaTupla2 = Tuple.Create(1, "José", "Martins", 1.72M);
+
+Console.WriteLine("===================================");
+
+Console.WriteLine($"ID: {tupla.ID}");
+Console.WriteLine($"Nome: {tupla.Nome}");
+Console.WriteLine($"Sorenome: {tupla.Sobrenome}");
+Console.WriteLine($"Altura: {tupla.Item4}");
+
+Console.WriteLine("===================================");
+// Criando variaveis com retorno de tupla
+var (sucesso, linhas, _) = arquivo.LerArquivo(caminho: "/Estudos/Arquivos/texto.txt");
+// Uma das infrmações foi descartada
+if (sucesso)
+{
+    // Console.WriteLine($"Quantidade de linhas: {linhasTotais}");
+    foreach (string linha in linhas)
+    {
+        Console.WriteLine(linha);
+    }
+}
+Console.WriteLine("===================================");
+
+// Usando o desconstrutor para criar variaveis
+(string nome, string sobrenome) = pessoa4;
+
+Console.WriteLine("Usando o deconstrutor: ");
+Console.WriteLine($"Nome: {nome}\nSobrenome: {sobrenome}");
+
+Console.WriteLine("===================================");
+// criando um método de sorteio
+Random random = new();
+int numeroSorteado = random.Next(minValue: 1, maxValue: 100);
+
+// Usando if ternário
+string imparPar = numeroSorteado % 2 == 0 ? "par" : "ímpar";
+Console.WriteLine($"O numero sorteado ({numeroSorteado}) é {imparPar}");

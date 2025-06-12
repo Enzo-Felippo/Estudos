@@ -16,6 +16,13 @@ namespace Conceitos.Models
             Nome = nome;
             Sobrenome = sobrenome;
         }
+
+        // Usando deconstrutor 
+        public void Deconstruct(out string nome, out string sobrenome)
+        {
+            nome = Nome;
+            sobrenome = Sobrenome.ToUpper();
+        }
         
         private string _nome;
         private int _idade;

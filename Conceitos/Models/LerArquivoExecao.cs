@@ -7,6 +7,20 @@ namespace Conceitos.Models
 {
     public class LerArquivoExecao
     {
+        // Usando tupla para retornar mais de uma informação
+        public (bool Sucesso, string[] Linhas, int LinhasTotais) LerArquivo(string caminho)
+        {
+            try
+            {
+                string[] linhas = File.ReadAllLines(caminho);
+                return (true, linhas, linhas.Count());
+            }
+            catch(Exception)
+            {
+                return (false, new string[0], 0);
+            }
+            
+        }
         private void GerarErro()
         {
             // Usando o throw para gerar uma exeção

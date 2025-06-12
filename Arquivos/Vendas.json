@@ -1,0 +1,14 @@
+[
+  {
+    "Id": 1,
+    "Nome_Produto": "Bolsa",
+    "Preco": 249.99,
+    "DataDaVenda": "2025-06-12T18:38:04.0463655-04:00"
+  },
+  {
+    "Id": 2,
+    "Nome_Produto": "Blussa",
+    "Preco": 89.99,
+    "DataDaVenda": "2025-06-12T18:38:04.0463655-04:00"
+  }
+]

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estudos.Common", "Estudos.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conceitos", "Conceitos\Conceitos.csproj", "{07279BE4-F444-4352-8ACB-EFB5C9360226}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsandoNuGet", "UsandoNuGet\UsandoNuGet.csproj", "{15D6B6E5-5338-477C-9F3D-D88D133AEB3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{07279BE4-F444-4352-8ACB-EFB5C9360226}.Release|x64.Build.0 = Release|Any CPU
 		{07279BE4-F444-4352-8ACB-EFB5C9360226}.Release|x86.ActiveCfg = Release|Any CPU
 		{07279BE4-F444-4352-8ACB-EFB5C9360226}.Release|x86.Build.0 = Release|Any CPU
+		{15D6B6E5-5338-477C-9F3D-D88D133AEB3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15D6B6E5-5338-477C-9F3D-D88D133AEB3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15D6B6E5-5338-477C-9F3D-D88D133AEB3E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{15D6B6E5-5338-477C-9F3D-D88D133AEB3E}.Debug|x64.Build.0 = Debug|Any CPU
+		{15D6B6E5-5338-477C-9F3D-D88D133AEB3E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{15D6B6E5-5338-477C-9F3D-D88D133AEB3E}.Debug|x86.Build.0 = Debug|Any CPU
+		{15D6B6E5-5338-477C-9F3D-D88D133AEB3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15D6B6E5-5338-477C-9F3D-D88D133AEB3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15D6B6E5-5338-477C-9F3D-D88D133AEB3E}.Release|x64.ActiveCfg = Release|Any CPU
+		{15D6B6E5-5338-477C-9F3D-D88D133AEB3E}.Release|x64.Build.0 = Release|Any CPU
+		{15D6B6E5-5338-477C-9F3D-D88D133AEB3E}.Release|x86.ActiveCfg = Release|Any CPU
+		{15D6B6E5-5338-477C-9F3D-D88D133AEB3E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
